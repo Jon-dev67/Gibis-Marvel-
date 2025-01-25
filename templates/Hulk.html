@@ -1,0 +1,152 @@
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: #333;
+            background-color: #1a1a2e; /* Azul escuro */
+            
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvezL_Z7xC5bbLN3vpT8wsADLSGXD8DFCjUlYtmgHuAfTzDp39hExQGbOB&s=10'); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+
+  }
+
+  .carousel-item img {
+    margin: auto;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: white;
+  }
+</style>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='imagens/page1.jpg') }}" class="d-block w-100" alt="Página 1">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page2.jpg') }}" class="d-block w-100" alt="Página 2">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page3.jpg') }}" class="d-block w-100" alt="Página 3">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page4.jpg') }}" class="d-block w-100" alt="Página 4">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page5.jpg') }}" class="d-block w-100" alt="Página 5">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page6.jpg') }}" class="d-block w-100" alt="Página 6">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page7.jpg') }}" class="d-block w-100" alt="Página 7">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page8.jpg') }}" class="d-block w-100" alt="Página 8">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page9.jpg') }}" class="d-block w-100" alt="Página 9">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page10.jpg') }}" class="d-block w-100" alt="Página 10">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page11.jpg') }}" class="d-block w-100" alt="Página 11">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page12.jpg') }}" class="d-block w-100" alt="Página 12">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page13.jpg') }}" class="d-block w-100" alt="Página 13">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page14.jpg') }}" class="d-block w-100" alt="Página 14">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page15.jpg') }}" class="d-block w-100" alt="Página 15">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page16.jpg') }}" class="d-block w-100" alt="Página 16">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page17.jpg') }}" class="d-block w-100" alt="Página 17">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page18.jpg') }}" class="d-block w-100" alt="Página 18">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page19.jpg') }}" class="d-block w-100" alt="Página 19">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page20.jpg') }}" class="d-block w-100" alt="Página 20">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page21.jpg') }}" class="d-block w-100" alt="Página 21">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page22.jpg') }}" class="d-block w-100" alt="Página 22">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page23.jpg') }}" class="d-block w-100" alt="Página 23">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page24.jpg') }}" class="d-block w-100" alt="Página 24">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page25.jpg') }}" class="d-block w-100" alt="Página 25">
+        </div>
+        visually-hidden<div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page26.jpg') }}" class="d-block w-100" alt="Página 26">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page27.jpg') }}" class="d-block w-100" alt="Página 27">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page28.jpg') }}" class="d-block w-100" alt="Página 28">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page29.jpg') }}" class="d-block w-100" alt="Página 29">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page30.jpg') }}" class="d-block w-100" alt="Página 30">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page31.jpg') }}" class="d-block w-100" alt="Página 31">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imagens/page32.jpg') }}" class="d-block w-100" alt="Página 32">
+        </div>
+        
+        
+        <!-- Adicione mais páginas conforme necessário -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
