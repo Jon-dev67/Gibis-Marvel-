@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block context %}
+<div class="hero" style="margin-top: 20px;">
+  <h1 style="color: white;">Leia histórias bem legais de alguns dos heróis mais cômicos</h1>
+  <p style="color: white;">A leitura estimula seu cérebro e desenvolve raciocínio mais lógico e rápido.</p>
+</div>
+<hr>
+<h2 class="text-white">Quadrinhos</h2>
+
+<!-- Card 1 -->
+<div class="card mb-4" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); color: white;">
+    <img src="{{ url_for('static', filename='imagens/Superman_005.jpg') }}" alt="Capa do Gibi 1" style="border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%;">
+    <div class="p-3">
+        <h3 class="text-danger">Super Man & Flash</h3>
+        <p>Lendas do homem de aço.</p>
+        <a href="{{ url_for('Superman') }}" class="btn btn-danger">Ler Gibi</a>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card mb-4" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); color: white;">
+    <img src="{{ url_for('static', filename='imagens/page1.jpg') }}" alt="Capa do Gibi 2" style="border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%;">
+    <div class="p-3">
+        <h3 class="text-danger">Hulk Smash</h3>
+        <p>Mais uma das super aventuras de Hulk.</p>
+        <a href="{{ url_for('hulk_page') }}" class="btn btn-danger">Ler Gibi</a>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card mb-4" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); color: white;">
+    <img src="{{ url_for('static', filename='imagens/pagina1.jpg') }}" alt="Capa do Gibi 3" style="border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%;">
+    <div class="p-3">
+        <h3 class="text-danger">Luke Cage Herói de Aluguel</h3>
+        <p>A vingança é minha.</p>
+        <a href="{{ url_for('Luke_Cage') }}" class="btn btn-danger">Ler Gibi</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Cadastro de Usuário
+{% endblock %}
+
+{% block context %}
+<div class="hero" style="margin-top: 20px;">
+  <div class="container text-center">
+    <h1 style="color: white;">Cadastro de Usuário</h1>
+    <p style="color: white;">Crie uma conta para acessar a aplicação.</p>
+  </div>
+</div>
+<div class="container" style="display: flex; justify-content: center; align-items: center;">
+    <img class="rounded-circle " src="https://img.pikbest.com/origin/09/05/53/62cpIkbEsTsyv.png!w700wp" style="width: 100px;">
+    </div>
+
+<div class="container mt-4">
+  <form method="POST" class="form-register">
+    {{ form.hidden_tag() }}
+    
+    <div class="mb-3">
+      {{ form.usuarios.label(class="form-label text-light") }}
+      {{ form.usuarios(class="form-control", placeholder="Digite seu nome de usuário") }}
+    </div>
+    <div class="mb-3">
+      {{ form.email.label(class="form-label text-light") }}
+      {{ form.email(class="form-control", placeholder="Digite seu e-mail") }}
+    </div>
+    <div class="mb-3">
+      {{ form.senha1.label(class="form-label text-light") }}
+      {{ form.senha1(class="form-control", placeholder="Digite sua senha") }}
+    </div>
+    <div class="mb-3">
+      {{ form.senha2.label(class="form-label text-light") }}
+      {{ form.senha2(class="form-control", placeholder="repita a senha") }}
+    </div>
+
+    <button type="submit" class="btn btn-danger btn-lg w-100">Cadastrar</button>
+  </form>
+
+  <div class="mt-4 text-center">
+    <p class="text-light">Já tem cadastro? <a href="{{ url_for('page_login') }}" class="text-info">Faça login</a></p>
+  </div>
+</div>
+{% endblock %}

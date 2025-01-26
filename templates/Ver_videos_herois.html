@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block context %}
+<div class="hero" style="margin-top: 20px;">
+  <h1 style="color: white;">Fique por dentro de curiosidades sobre os heróis</h1>
+  <p style="color: white;">Com grandes poderes vem grandes responsabilidades. Tio Ben.</p>
+</div>
+
+<h2 class="text-white">Vídeos</h2>
+
+<div class="card mb-4" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); color: white;">
+  <div class="p-3">
+    <h3 class="text-danger">Curiosidades: Red Hulk</h3>
+    <p>Curiosidades sobre o Hulk Vermelho que talvez você não saiba:</p>
+    <video width="100%" height="315" controls>
+      <source src="{{ url_for('static', filename='vídeos/hulck_vermelho_curiosidades.mp4') }}" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+  </div>
+</div>
+
+<!-- Exemplo de outro vídeo -->
+<div class="card mb-4" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); color: white;">
+  <div class="p-3">
+    <h3 class="text-danger">Flash e Grodd</h3>
+    <video width="100%" height="315" controls>
+      <source src="{{ url_for('static', filename='vídeos/flash&Grodd.mp4') }}" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+  </div>
+</div>
+{% endblock %}
