@@ -9,7 +9,7 @@ from flask_login import LoginManager, login_user, UserMixin, logout_user, login_
 
 db = SQLAlchemy()
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///instance/app_marvel.db"
+app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///app_marvel.db"
 app.config["SECRET_KEY"]="41b56541272c31e0dbd695def78428b2"
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
