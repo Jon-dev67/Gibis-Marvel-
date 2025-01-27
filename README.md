@@ -2,6 +2,8 @@ Gibis-Marvel
 
 Uma aplicação desenvolvida com Flask que oferece funcionalidades para leitura de gibis, visualização de vídeos de heróis, além de páginas dedicadas a personagens como Hulk, Luke Cage e Superman. Inclui autenticação de usuários, cadastro e segurança avançada.
 
+Acesse a aplicação em produção: Gibis-Marvel
+
 
 ---
 
@@ -36,7 +38,6 @@ Configuração com SQLite para armazenar usuários e informações relacionadas.
 
 
 
-
 ---
 
 Tecnologias Utilizadas
@@ -63,35 +64,38 @@ Instalação
 
 1. Clone o repositório:
 
+
+
 git clone https://github.com/Jon-dev67/Gibis-Marvel-.git
 cd Gibis-Marvel-
 
-
 2. Crie um ambiente virtual e ative-o:
+
+
 
 python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate  # Windows
 
-
 3. Instale as dependências:
+
+
 
 pip install -r requirements.txt
 
-
 4. Crie o banco de dados:
 
-python
+
+
 >>> from app import db
 >>> db.create_all()
 >>> exit()
 
-
 5. Execute a aplicação:
 
+
+
 flask run
-
-
 
 
 ---
